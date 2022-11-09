@@ -1,6 +1,10 @@
-{{ include "bootstrap/base.html" }}
+{% include "bootstrap/base.html" %}
 
 {% block title %}☕️Coffee & Wifi💻{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
 
 {% block content %}
 <div class="jumbotron text-center">
@@ -9,7 +13,7 @@
     <p class="lead">Want to work in a cafe but need power and will?</p>
     <hr class="my-4">
     <p>You've found the right place! Checkout my collection of cafes with data on power socket available, wifi speed and coffee quality.</p>
-    <a class="btn btn-warning btn-lg" href="add.html" role="button">Show me</a>
+    <a class="btn btn-warning btn-lg" href="add" role="button">Show me</a>
   </div>
 </div>
   {% endblock %}
