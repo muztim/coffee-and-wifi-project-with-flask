@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-8">
       <h1>Add a new café into the database</h1>
-      {{ wtf.quick_form(form), novalidate }}
+      {{ wtf.quick_form(form, novalidate=True) }}
       <p class="space-above"><a href="{{ url_for('cafes') }}">See all cafes</a></p>
     </div>
   </div>

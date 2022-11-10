@@ -1,7 +1,6 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
 from cafe_form import CafeFrom
-import MarkupSafe
 import csv
 
 app = Flask(__name__)
